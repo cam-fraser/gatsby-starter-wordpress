@@ -23,7 +23,7 @@ export const BlogPostTemplate = ({
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <div style={{ marginTop: `4rem` }}>
               <p>
-                {date} - posted by{' '}
+                {date}
                 <Link to={`/author/${author.slug}`}>{author.name}</Link>
               </p>
               {categories && categories.length ? (
